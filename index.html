@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Player</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
+    <link href='csstricks.css' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <video src='Helen Slater - Seinfeld.mp4' id='video'>
+    </video>
+    <div id='controls'>
+        <button id='pauseButton' class ='hideMe'><i class="fas fa-pause fa-2x"></i></button> 
+        <button id='playButton'><i class="fas fa-play fa-2x"></i></button>
+        <input type='range' id='videoProgress' min='0' max='100' step='0.1' value='0' />
+        <span id='the_time'></span>   
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

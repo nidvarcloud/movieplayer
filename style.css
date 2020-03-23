@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height:100vh;
+    margin:0;
+    padding:0 0 40px 0;
+}
+
+#video{
+    cursor: pointer;
+    width:60%;
+    background-color:black;
+    border-radius:10px 10px 0 0;
+}
+
+#controls{
+    background:#333;
+    color:#fff;
+    width:60%;
+    border-radius:0 0 10px 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+#controls button{
+    background:transparent;
+    border:0;
+    cursor: pointer;
+}
+
+#controls #timeRange{
+    color:white;
+    font-weight:bold;
+    margin: 0 0 0 10px;
+}
+
+#controls .fa-play{
+    color:lightgreen;
+}
+#controls .fa-stop{
+    color:red;
+}
+#controls .fa-pause{
+    color:lightgreen;
+}
+button:focus{
+    outline:0;
+}
+.hideMe{
+    display:none;
+}
+#the_time{
+    padding:0 5px 0 5px;
+}
+@media (max-width:800px){
+    #video,#controls{
+        width:90%;
+    }
+}
